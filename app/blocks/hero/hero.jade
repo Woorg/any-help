@@ -1,0 +1,13 @@
+mixin hero()
+	+b.hero
+		+e.in
+			+b.callback-form
+				+e.title ЗАЯВКА НА РАСЧЕТ
+				+e.text Наш менеджер свяжется <br/> с вами в удобное вам время
+				+e('form')
+					+e.input
+						+e('input')(type='text' placeholder='Ваше имя:' value='')
+					+e.input
+						+e('input')(type='text' placeholder='Телефон:' value='')
+					+e.submit
+						+e('input')(type='submit' value='Отправить' )

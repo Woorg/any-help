@@ -1,0 +1,65 @@
+.features
+	min-height 305px
+	&__in
+		padding-top 38px
+		padding-bottom 44px
+	&__title
+		margin-bottom 49px
+		font-os-light(30px,20px)
+		color $color-dark-blue 
+		text-transform uppercase
+		text-align center
+	&__list
+		font-size 0
+		cf()
+	&__i
+		display inline-block
+		vertical-align top
+		margin-left 20px
+		width 280px
+		// col(3/12, gutter: 1.666700)
+		&:first-child
+			margin-left 0
+	&__a
+		display block
+		text-align center
+		font-os-bold(16px,1)
+		color $color-blue
+		text-decoration none
+		&:hover
+			text-decoration none
+			.features__i-title
+				text-decoration underline
+			.features__note
+				text-decoration none
+	&__i-title
+		margin-bottom 4px
+		display block
+	&__note
+		display block
+		font-os-regular(16px,1)
+		text-decoration none
+		color $color-dark-blue
+	&__icon-1
+		margin-top 15px
+		margin-bottom 39px
+		display inline-block
+		sprite($feature_1)
+	&__icon-2
+		margin-left 8px
+		margin-bottom 34px
+		display inline-block
+		sprite($feature_2)
+	&__icon-3
+		margin-top 2px
+		margin-bottom 37px
+		display inline-block
+		sprite($feature_3)
+	&__icon-4	
+		margin-top 5px
+		margin-left 5px
+		margin-bottom 37px
+		display inline-block
+		sprite($feature_4)
+		
+			

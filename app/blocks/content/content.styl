@@ -1,0 +1,81 @@
+.content
+	padding-top 6px
+	float right
+	width 880px
+	&__title
+		margin-bottom 16px
+		font-os-light(30px, 1)		
+		text-transform uppercase
+	
+.table
+	margin-bottom 40px
+	&__head
+		td
+			padding 11px 17px 14px 15px
+			// width 50%
+			width 433px
+			background-color $color-dark-blue
+			font-os-regular(18px,1)
+			color #fff 
+	&__row
+		border-top 1px solid #fff
+		min-height 58px
+		td
+			border-left 1px solid #fff
+			&:nth-child(3n+1)
+				border-left none
+		&:nth-child(odd)
+			td
+				padding 8px 15px 14px 15px
+				background-color #F0F3F4 
+		&:nth-child(even)
+			td
+				padding 8px 15px 10px
+				background-color #E3E8EA
+		td.table__price
+			padding 8px 1px 14px 17px
+	&__a
+		font-os-regular(14px,19px)
+		&-style-1
+			color $color-dark-blue
+			text-decoration underline
+			&:hover
+				text-decoration none
+		&-style-2
+			color $color-blue 
+			text-decoration none
+			&:hover
+				text-decoration underline
+		&-more
+			float right
+	&__price
+		font-os-regular(14px,20px)
+		color $color-dark-blue 
+
+.pagination
+	margin-bottom 40px
+	cf()
+	&__ul
+		float right
+		font-size 0
+	&__i
+		margin-left 9px
+		display inline-block
+		vertical-align top
+		min-width 38px
+		text-align center
+		
+	&__a
+		display block
+		background-color #e3e8ea 
+		font-os-bold(20px,38px)
+		color #80acc4
+		border-radius 50%
+		text-decoration none
+		// &:hover
+	&__i
+		&-active,
+		&:hover
+			.pagination__a
+				background-color #73c0e9
+				color #fff  

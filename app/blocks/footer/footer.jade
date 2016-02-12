@@ -1,0 +1,38 @@
+mixin footer()
+	+b('footer').footer
+		+e.in
+			+e.left
+				+e.logo
+					+e.title Any-help.ru
+					+e.slogan медицинские справки <br/> с доставкой
+				+e.phone 8800 555 44 44
+					+e('a').phone-a(href='#') Заказать звонок
+			+e('nav').nav
+				+e('ul').ul
+					+e('li').i
+						+e('a').a(href='#') Главная
+					+e('li').i
+						+e('a').a(href='#') О нас
+					+e('li').i
+						+e('a').a(href='#') Прайс-лист
+					+e('li').i
+						+e('a').a(href='#') Информация
+					+e('li').i
+						+e('a').a(href='#') Контакты
+			+e('nav').services
+				+e('ul').ul
+					+e('li').i
+						+e('a').a(href='#') Выписка из больницы
+					+e('li').i
+						+e('a').a(href='#') Справка в бассейн
+					+e('li').i
+						+e('a').a(href='#') Справка для ГИБДД
+					+e('li').i
+						+e('a').a(href='#') Справка для поступления на учебу
+					+e('li').i
+						+e('a').a(href='#') Справка для академического отпуска
+					+e('li').i
+						+e('a').a(href='#') Медицинские книжки
+			+b.payments
+				+e('h3').title СПОСОБЫ ОПЛАТЫ:
+				+e('a').link(href='#')

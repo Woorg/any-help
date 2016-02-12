@@ -1,0 +1,102 @@
+.footer
+	background-color $color-dark-blue 
+	&__in
+		padding-top 30px
+		padding-bottom 44px
+		cf()
+	&__left
+		display inline-block
+		vertical-align top
+		width 400px
+		// margin-right 20px
+		// col(3/12,gutter: 10)
+	&__logo
+		position relative
+		margin-top 9px
+		margin-left 10px
+		margin-bottom 20px
+		padding-top 12px
+		width 272px
+		&:after
+			content ""
+			position absolute
+			top 0
+			left 0
+			sprite($logo)
+	&__title,
+	&__slogan
+		margin-left 90px
+	&__title
+		margin-bottom 5px
+		color $color-logo
+		text-transform uppercase
+		font-os-bold(27px,20px) 
+	&__slogan
+		// margin-right 10px
+		font-os-regular(16px,20px)
+		color #fff
+	&__phone
+		position relative
+		margin-top 15px
+		margin-left 49px 
+		padding-top 5px
+		width 220px
+		font-os-regular(24px,20px)
+		color #fff
+		text-align right
+		&:after
+			content ""
+			position absolute
+			top 0
+			left 0
+			sprite($phone_icon_2)
+		&-a
+			border 1px solid #fff
+			margin-top 16px
+			padding 5px 32px 6px 24px
+			display inline-block
+			font-size 14px
+			line-height 20px
+			color #fff
+			text-decoration none
+			border-radius 99999px
+			&:hover
+				text-decoration underline
+	&__nav
+		margin-top 10px
+		display inline-block
+		vertical-align top
+		width 190px
+		// margin-right 20px
+		// col(2/12,gutter: 1.666700)
+		
+	&__services
+		margin-top 10px
+		display inline-block
+		vertical-align top
+		width 300px
+		// col(3/12,gutter: 1.666700)
+	// &__ul
+	&__i
+		margin-bottom 0
+	&__a
+		font-os-regular(14px,30px) 
+		color #fff 
+		text-decoration none
+		&:hover
+			text-decoration underline
+.payments
+	margin-top 6px
+	display inline-block
+	vertical-align top
+	width 276px
+	// col(3/12,gutter: 1.666700)
+	&__title
+		
+		margin-bottom 14px
+		font-os-light(16px,30px)
+		color #FFF 
+		text-transform uppercase
+	&__link
+		display block
+		sprite($payment_icons)

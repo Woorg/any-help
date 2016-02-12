@@ -1,0 +1,55 @@
+.services
+	&__in
+		padding-top 66px
+		padding-bottom 25px
+
+	&__ul
+		margin-bottom 28px
+		font-size 0
+		cf()
+	&__i
+		display inline-block
+		vertical-align top
+		margin-left 20px
+		width 180px
+		// col(2/12,gutter: 1.666700)
+		&:first-child
+			margin-left 0
+	&__a
+		display block
+		text-align center
+		text-decoration none
+	&__icon
+		display inline-block
+		&_icon-1
+			margin-top 8px
+			margin-bottom 16px
+			sprite($icon_1)
+		&_icon-2
+			margin-top 4px
+			margin-bottom 19px
+			sprite($icon_2)
+		&_icon-3
+			margin-top 4px
+			margin-bottom 16px
+			sprite($icon_3)
+		&_icon-4
+			margin-top 11px
+			margin-bottom 10px
+			sprite($icon_4)
+		&_icon-5
+			margin-top 1px
+			margin-bottom 10px
+			sprite($icon_5)
+		&_icon-6
+			margin-bottom 12px
+			sprite($icon_6)
+	&__i-title
+		display block
+		font-os-regular(16px,20px)
+		color $color-dark-blue
+		text-decoration underline
+	&__a
+		&:hover
+			.services__i-title
+				text-decoration none

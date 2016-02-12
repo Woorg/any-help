@@ -1,0 +1,29 @@
+include ../blocks/header/header
+
+include ../blocks/hero/hero
+include ../blocks/services/services
+include ../blocks/about/about
+include ../blocks/features/features
+include ../blocks/feedback/feedback
+include ../blocks/info/info
+include ../blocks/pre-order/pre-order
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Any-help.ru - медицинские справки с доставкой';
+
+block content
+	+header
+	
+	+hero
+	+services
+	+about
+	+features
+	+feedback
+	+info
+	+pre-order
+
+	+footer

@@ -1,0 +1,75 @@
+.header
+	min-height 116px
+	&__in
+		padding-top 14px
+		padding-bottom 26px
+		cf()
+	&__logo
+		position relative
+		margin-right 120px
+		padding-top 11px
+		float left
+		width 274px
+		&:after
+			content ""
+			position absolute
+			top 0
+			left 0
+			sprite($logo)
+	&__title,
+	&__slogan
+		margin-left 92px
+	&__title
+		margin-bottom 3px
+		color $color-logo
+		text-transform uppercase
+		font-os-bold(27px,20px) 
+	&__slogan
+		margin-left 90px
+		font-os-regular(16px,20px)
+		color $color-dark-blue
+	&__nav
+		margin-top 32px
+		width 500px
+		float left
+	&__ul
+		font-size 0
+		cf()
+	&__i
+		margin-left 20px
+		margin-bottom 10px
+		display inline-block
+		vertical-align top
+		font-os-regular(16px,20px)
+		&:first-child
+			margin-left 0
+	&__a
+		color $color-dark-blue
+		text-decoration underline
+		&:hover
+			text-decoration none
+	&__phone
+		position relative
+		margin-top 18px
+		padding-top 6px
+		width 230px
+		float right
+		font-os-regular(24px,20px)
+		color $color-dark-blue
+		text-align right
+		&:after
+			content ""
+			position absolute
+			top 0
+			left 0
+			sprite($phone_icon)
+		&-a
+			margin-right 4px
+			display inline-block
+			font-size 14px
+			line-height 20px
+			color $color-blue
+			text-decoration none
+			&:hover
+				text-decoration underline
+		

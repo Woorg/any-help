@@ -1,0 +1,59 @@
+.info
+	&__in
+		padding-top 45px
+		padding-bottom 33px 
+	&__title
+		margin-bottom 51px
+		font-os-light(30px,20px)
+		color $color-dark-blue
+		text-transform uppercase
+		text-align center
+	
+.info-list
+	margin-bottom 35px
+	font-size 0
+	cf()
+	&__i
+		display inline-block
+		vertical-align top
+		margin-left 20px
+		width 280px 
+		// col(3/12,gutter:1.666700)
+		&:first-child
+			margin-left 0
+	&__a
+		display block
+		text-decoration none
+		&:hover
+			.info-list__more
+				text-decoration underline
+	&__image
+		margin-bottom 26px
+		display block
+		overflow hidden
+		img
+			border-radius 10px
+			width 280px
+			height 163px
+	&__title
+		margin-bottom 23px
+		font-os-bold(16px,1)
+		color $color-blue
+	&__text
+		margin-bottom 24px
+		display block
+		font-os-regular(16px,19px)
+		color $color-dark-blue
+	&__more
+		position relative
+		display inline-block
+		font-os-regular(16px,1)
+		color $color-blue
+		text-decoration none
+		&:after
+			position absolute
+			top 4px
+			right -20px
+			content ""
+			sprite($more_icon)
+		

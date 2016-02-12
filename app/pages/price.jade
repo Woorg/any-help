@@ -1,0 +1,17 @@
+include ../blocks/header/header
+include ../blocks/wrapper/wrapper
+
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Any-help.ru - медицинские справки с доставкой';
+
+block content
+	+header()
+	
+	+wrapper()
+	
+	+footer()

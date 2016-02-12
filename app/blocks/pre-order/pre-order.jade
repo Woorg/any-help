@@ -1,0 +1,12 @@
+mixin pre-order()
+	+b('section').pre-order
+		+e.in
+			+e('h2').title СДЕЛАТЬ ПРЕДВАРИТЕЛЬНЫЙ ЗАКАЗ <br /> НА НАШЕМ САЙТЕ ОЧЕНЬ ПРОСТО!
+			+e.text Оставьте Ваши контакты и мы с вами свяжемся в ближайшее время
+			+e('form').form
+				+e.input
+					+e('input')(type='text', placeholder='Ваше имя:', value='')
+				+e.input
+					+e('input')(type='text', placeholder='Телефон:', value='')
+				+e.submit
+					+e('input')(type='submit', value='Отправить')

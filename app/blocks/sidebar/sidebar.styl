@@ -1,0 +1,110 @@
+.sidebar
+	margin-right 20px
+	width 280px
+	float left
+.side-form
+	margin-top 7px
+	margin-bottom 20px
+	padding 33px 19px 36px  
+	min-height 370px
+	background-color $color-sky
+	text-align center
+	border-radius 4px
+	&__title
+		margin-bottom 13px
+		font-os-bold(20px,24px)
+		color $color-white
+		text-transform uppercase
+	&__text
+		margin-bottom 25px
+		font-os-regular(16px,20px)
+		color $color-white
+	&__input
+		margin-bottom 13px
+		width 242px
+		input
+			border none
+			padding 11px 14px 6px
+			width 100%
+			background #FFF
+			border-radius 3px
+			font-os-regular(16px,1)
+			color #91aebf
+	&__submit
+		margin-top 20px
+		input
+			padding 11px 28px 8px 28px 
+			border 2px solid $color-white
+			background-color transparent
+			font-ub-reg(16px,1)
+			color #FFF
+			border-radius 5px
+.side-services
+	margin-bottom 20px
+	padding 32px 16px 15px 18px 
+	background-color #F0F3F4 
+	border-radius 4px
+	&__i
+		margin-bottom 24px
+		&-1
+			.side-services__a
+				&:after
+					top -4px
+					left 10px
+					sprite($side_icon_1)
+		&-2
+			.side-services__a
+				&:after
+					top -4px
+					sprite($side_icon_2)
+		&-3
+			.side-services__a
+				&:after
+					top -8px
+					left 6px 
+					sprite($side_icon_3)
+		&-4
+			.side-services__a
+				&:after
+					sprite($side_icon_4)
+		&-5
+			.side-services__a
+				&:after
+					top 2px
+					left 4px
+					sprite($side_icon_5)
+		&-6
+			.side-services__a
+				&:after
+					top -4px
+					left 8px
+					sprite($side_icon_6)
+	&__a
+		position relative
+		// min-height 40px
+		padding-left 54px
+		display block
+		font-os-regular(16px,18px)
+		color $color-dark-blue
+		text-decoration none
+		&:after
+			position absolute
+			top 0
+			left 0
+			content ""
+		&:hover
+			text-decoration underline
+			
+
+.side-nav
+	margin-bottom 20px
+	&__i
+		margin-bottom 20px
+	&__a
+		font-os-regular(14px,20px)
+		color $color-blue 	
+		text-decoration underline
+		&:hover
+			text-decoration none
+		
+	

@@ -1,0 +1,14 @@
+mixin breadcrumbs()
+	.breadcrumbs
+		ul.breadcrumbs__ul(itemscope, itemtype="http://schema.org/BreadcrumbList")
+			li.breadcrumbs__i(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+				a.breadcrumbs__a(item, href="https://example.com/1")
+					span(itemprop="name") Главная
+				meta(itemprop="position" content="1")
+			li.breadcrumbs__i.breadcrumbs__i-active(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+				a.breadcrumbs__a(item, href="https://example.com/2")
+					span(itemprop="name") Прайс-лист
+				meta(itemprop="position" content="2")
+
+
+

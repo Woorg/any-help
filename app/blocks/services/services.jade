@@ -1,0 +1,30 @@
+include ../more-link/more-link
+mixin services()
+	+b.services
+		+e.in
+			+e('ul').ul
+				+e('li').i
+					+e('a').a(href='#')
+						+e.icon._icon-1
+						+e.i-title Выписка из больницы
+				+e('li').i
+					+e('a').a(href='#') 
+						+e.icon._icon-2
+						+e.i-title Справка в бассеин
+				+e('li').i
+					+e('a').a(href='#') 
+						+e.icon._icon-3
+						+e.i-title Справка для ГИБДД
+				+e('li').i
+					+e('a').a(href='#') 
+						+e.icon._icon-4
+						+e.i-title Справка для поступления на учебу
+				+e('li').i
+					+e('a').a(href='#') 
+						+e.icon._icon-5
+						+e.i-title Справка для академического отпуска
+				+e('li').i
+					+e('a').a(href='#') 
+						+e.icon._icon-6
+						+e.i-title Медицинские книжки
+			+more-link('СМОТРЕТЬ ВСЕ')._style-1
